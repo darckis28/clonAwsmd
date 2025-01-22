@@ -1,0 +1,19 @@
+---
+import heroVideo from "../assets/hero.mp4";
+---
+
+<section class="min-h-screen pt-4 px-4 flex">
+  <div
+    class="w-full min-h-full py-2 px-3 relative rounded-2xl overflow-hidden bg-white/20 backdrop-blur-xl flex-1"
+  >
+    <div class=""></div>
+    <div class="absolute top-0 left-0 -z-10">
+      <video
+        src={heroVideo}
+        autoplay
+        loop
+        class="w-full h-full object-cover"
+      ></video>
+    </div>
+  </div>
+</section>
