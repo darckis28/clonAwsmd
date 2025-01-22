@@ -1,0 +1,25 @@
+---
+interface Props {
+  href: string;
+  name: string;
+}
+const { href, name } = Astro.props;
+---
+
+<a
+  class="py-[14px] px-5 block group"
+  href={href}
+>
+  <p class="h-5 flex-col flex overflow-hidden">
+    <span
+      class="group-hover:-translate-y-6 transition-all duration-[350ms] ease-linear"
+    >
+      {name}</span
+    >
+    <span
+      class="group-hover:-translate-y-6 transition-all duration-[350ms] ease-linear"
+    >
+      {name}</span
+    >
+  </p>
+</a>
