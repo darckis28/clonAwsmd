@@ -1,0 +1,13 @@
+<div
+  id="circle"
+  class="w-2 h-2 bg-purple-800 absolute rounded-full z-50 pointer-events-none"
+>
+</div>
+
+<script>
+  const circle: HTMLElement = document.getElementById("circle") as HTMLElement;
+  document.addEventListener("mousemove", (e) => {
+    circle.style.left = e.pageX + "px";
+    circle.style.top = e.pageY + "px";
+  });
+</script>
