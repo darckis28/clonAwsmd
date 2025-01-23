@@ -5,6 +5,7 @@ export default {
     extend: {
       animation: {
         pulceAnimation: "pulceButton  2s infinite",
+        spinRule: "spinRule 10s infinite",
       },
     },
   },
