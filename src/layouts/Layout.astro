@@ -44,4 +44,19 @@ const { title } = Astro.props;
     font-family: "normatica", sans-serif;
     color: white;
   }
+  @keyframes pulceButton {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    70% {
+      transform: translate(-50%, -50%) scale(1.6);
+      opacity: 0;
+    }
+    70.1%,
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
 </style>
