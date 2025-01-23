@@ -21,9 +21,9 @@
         numberOfLetters++;
       } else {
         clearInterval(interval);
-        deleteLetter();
+        setTimeout(deleteLetter, 700);
       }
-    }, 150);
+    }, 50);
   }
   function deleteLetter() {
     interval = setInterval(() => {
@@ -33,10 +33,11 @@
       } else {
         clearInterval(interval);
         count++;
+        numberOfLetters = 0;
         if (count === texts.length) count = 0;
         actionLetter();
       }
-    }, 150);
+    }, 50);
   }
   actionLetter();
 </script>
