@@ -6,6 +6,7 @@ export default {
       animation: {
         pulceAnimation: "pulceButton  2s infinite",
         spinRule: "spinRule 10s infinite",
+        scroll: "scroll 10s infinite linear  ",
       },
     },
   },
