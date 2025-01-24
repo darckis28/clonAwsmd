@@ -1,0 +1,38 @@
+---
+import CardServi from "./CardServi.astro";
+import phones from "../../assets/phones.webp";
+import paper from "../../assets/paper.webp";
+import tisa from "../../assets/tisa.webp";
+---
+
+<div class="grid grid-cols-3 gap-1">
+  <CardServi
+    color="#E4E3DF"
+    image={phones}
+    title="Mobile App Development"
+    description="Many years of expertise in mobile development allow us to design architecture and create bespoke native applications for Apple iOS and Google Android."
+    technologies={["React Native", "Swift", "Kotlin"]}
+  />
+  <CardServi
+    color="#F1AE86"
+    image={tisa}
+    title="Solid Design Solutions"
+    description="We're driven by user‑centered design that drives productivity and increases revenue. Our expertise and ingenuity are remarkable, yet we always strive to outdo and outperform our previous achievements."
+    technologies={[
+      "Figma",
+      "Adobe XD",
+      "Sketch",
+      "Blender",
+      "Cinema 4D",
+      "Adobe AfterEffects",
+      "Adobe Illustrator",
+    ]}
+  />
+  <CardServi
+    color="#90A6D0"
+    image={paper}
+    title="Web Development"
+    description="Our adaptive design components are built using perfectly structured and readable code. We make sure that the development solutions are well-optimized and work flawlessly across devices and browsers."
+    technologies={["React", "Vue", "Angular", "Node.js", "Express", "MongoDB"]}
+  />
+</div>
