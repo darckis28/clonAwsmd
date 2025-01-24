@@ -1,0 +1,25 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  video: any;
+}
+const { title, description, video } = Astro.props;
+---
+
+<div
+  class="relative py-5 px-4 min-h-44 bg-[#F2F0F0] rounded-3xl overflow-hidden -z-20"
+>
+  <video
+    src={video}
+    autoplay
+    loop
+    class="absolute aspect-square w-32 -bottom-7 -right-4 -z-10"
+  ></video>
+  <div class="max-w-48 z-20">
+    <h4 class="text-black text-5xl font-semibold">{title}</h4>
+    <p class="text-black/50 mt-3 text-sm">
+      {description}
+    </p>
+  </div>
+</div>

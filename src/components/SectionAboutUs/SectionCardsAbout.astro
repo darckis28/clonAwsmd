@@ -1,0 +1,27 @@
+---
+import ball from "../../assets/ball-color.mp4";
+import CardAbout from "./CardAbout.astro";
+import pruzina from "../../assets/pruzina-color.mp4";
+import volcheck from "../../assets/volchek-color.mp4";
+import time from "../../assets/time-color.mp4";
+---
+
+<div class="grid grid-cols-2 gap-2">
+  <CardAbout
+    title="+300"
+    description="We have successfully completed a total of 300+ projects"
+    video={volcheck}
+  /><CardAbout
+    title="100K"
+    description="We’ve gathered dozens of reviews from the clients and + 100k reviews from their users"
+    video={pruzina}
+  /><CardAbout
+    title="+10"
+    description="Years of experience"
+    video={time}
+  /><CardAbout
+    title="+280"
+    description="Team members all over the world"
+    video={ball}
+  />
+</div>
