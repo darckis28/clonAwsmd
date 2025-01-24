@@ -1,0 +1,43 @@
+<div class="flex items-center space-x-3">
+  <h2
+    id="text"
+    class="text-8xl font-bold uppercase"
+  >
+  </h2>
+  <div class="h-24 w-4 bg-white"></div>
+</div>
+<script is:inline>
+  const texts = ["Websites", "Apps", "Branding", "Marketing"];
+  const text = document.getElementById("text");
+  let count = 0;
+  let numberOfLetters = 0;
+  let interval;
+
+  function actionLetter() {
+    interval = setInterval(() => {
+      const letter = texts[count];
+      if (numberOfLetters < letter.length) {
+        text.textContent += letter[numberOfLetters];
+        numberOfLetters++;
+      } else {
+        clearInterval(interval);
+        setTimeout(deleteLetter, 700);
+      }
+    }, 50);
+  }
+  function deleteLetter() {
+    interval = setInterval(() => {
+      if (numberOfLetters > 0) {
+        text.textContent = text.textContent.slice(0, -1);
+        numberOfLetters--;
+      } else {
+        clearInterval(interval);
+        count++;
+        numberOfLetters = 0;
+        if (count === texts.length) count = 0;
+        actionLetter();
+      }
+    }, 50);
+  }
+  actionLetter();
+</script>

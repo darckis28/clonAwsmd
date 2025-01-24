@@ -1,0 +1,36 @@
+---
+import heroVideo from "../../assets/hero.mp4";
+import Header from "@components/Header.astro";
+import ContentInfoHero from "@components/Hero/ContentInfoHero.astro";
+import VideosHero from "@components/Hero/VideosHero.astro";
+---
+
+<section class="min-h-screen p-3 flex">
+  <div
+    class="flex flex-col justify-between w-full min-h-full pt-2 px-[18px] pb-[30px] relative rounded-[35px] overflow-hidden bg-white/20 backdrop-blur-xl flex-1"
+  >
+    <Header />
+    <div class="flex items-end">
+      <ContentInfoHero />
+      <div class="w-1/2 flex justify-end flex-col items-end gap-5 pr-5">
+        <ul class="flex flex-col space-y-5 items-end mb-10">
+          <li class="text-white/40 font-bold"><a href="#">Home</a></li>
+          <li class="text-white font-bold"><a href="#">Our Services</a></li>
+          <li class="text-white font-bold"><a href="#">About USe</a></li>
+          <li class="text-white font-bold"><a href="#">Portafolio</a></li>
+          <li class="text-white font-bold"><a href="#">Views</a></li>
+        </ul>
+        <VideosHero />
+      </div>
+    </div>
+
+    <div class="absolute top-0 left-0 -z-10 w-full h-full">
+      <video
+        src={heroVideo}
+        autoplay
+        loop
+        class="w-full h-full object-cover object-center aspect-video"
+      ></video>
+    </div>
+  </div>
+</section>
