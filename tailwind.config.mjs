@@ -7,6 +7,7 @@ export default {
         pulceAnimation: "pulceButton  2s infinite",
         spinRule: "spinRule 10s infinite",
         scroll: "scroll 10s infinite linear  ",
+        scale: "scale 10s infinite ease-in-out",
       },
     },
   },

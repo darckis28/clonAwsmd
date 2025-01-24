@@ -77,6 +77,16 @@ const { title } = Astro.props;
     to {
       transform: translate3d(-100%, 0, 0);
     }
-
+  }
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 </style>
